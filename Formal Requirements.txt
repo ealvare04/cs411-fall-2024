@@ -1,0 +1,33 @@
+1: Goal and non-goal
+
+	Goal: Ensure that SnickerSync enhances the merge experience by making it more engaging without adding unnecessary  complexity to the user’s workflow
+
+	Non-goal: Redesign the entire merge process in GiggleGit. SnickerSync should only add to the existing workflow, and not overcomplicate it.
+
+
+2: Two non-functional requirements
+
+	NFR: Access control for SnickerSync features
+		only project managers and designated team leads should have the ability to manage and update SnickerSync settings
+
+
+	NFR: Randomized user assignment for user study
+		Users participating in the user study should be randomly assigned to either the control group of regular merges or the 		experimental group of merges with SnickerSync to gather unbiased data.
+
+		
+3: Create two functional requirements per non-functional requirement
+
+	NFR 1: Access control for SnickerSync features
+
+		FR: Create roles for PMs and team leads to control access to SnickerSync settings
+			Only users with specific roles can modify SnickerSync settings, including  the create of new types
+
+		FR: Implement audit logs for changes made to SnickerSync settings.
+			Any changes to the SnickerSync settings should be logged, including who made the changes and when.
+
+	NFR 2: Randomized user assignment for user study
+
+		FR: Develop an automated system for randomizing user assignments
+			Upon starting the user study, users will automatically be assigned to either the control or experimental group, 			ensuring an even and random distribution.
+
+		FR: Ensure that all users’ group assignments and interactions with the merge process are tracked in the system to 			enable data analysis for the user study. 
